@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Close Beta Test</h1>
+      <p id="description">SD Gundam Battle Alliance</p>
+    </header>
+
+    <div class="container">
+      <form method="post" action="" id="survey-form">
+        <!-- input -->
+        <label for="name" id="name-label">Name</label>
+        <input type="text" name="name" placeholder="Enter your name" id="name" required />
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" placeholder="Enter your email" id="email" required />
+        <label for="number" id="number-label">Age</label>
+        <input type="number" name="age" min="18" max="40" placeholder="Age" id="number" required />
+        <!-- dropdown -->
+        <label for="dropdown">Which option describes your current role?</label>
+        <select name="role" id="dropdown">
+          <option value="student">Student</option>
+          <option value="employee">Employee</option>
+          <option value="freelance">Freelance</option>
+        </select>
+        <!-- radio -->
+        <div class="input-radio">
+          <p>Would you recommend SD Gundam Battle Alliance to a friend?</p>
+          <input type="radio" id="definitely" name="recommend" value="Definitely" />
+          <label for="definitely">Definitely</label><br />
+          <input type="radio" id="maybe" name="recommend" value="Maybe" />
+          <label for="maybe">Maybe</label><br />
+          <input type="radio" id="notsure" name="recommend" value="Not sure" />
+          <label for="notsure">Not sure</label><br />
+        </div>
+        <!-- checkbox -->
+        <div class="input-checkbox">
+          <p>what games have you played?</p>
+          <input type="checkbox" id="game1" name="game1" value="PUBGM" />
+          <label for="game1">PUBGM</label><br />
+          <input type="checkbox" id="game2" name="game2" value="Mobile Legends" />
+          <label for="game2">Mobile Legends</label><br />
+          <input type="checkbox" id="game3" name="game3" value="Apex Legends" />
+          <label for="game3">Apex Legends</label><br />
+          <input type="checkbox" id="game4" name="game4" value="Master Duel" />
+          <label for="game4">Master Duel</label><br />
+          <input type="checkbox" id="game5" name="game5" value="Play Together" />
+          <label for="game5">Play Together</label><br />
+          <input type="checkbox" id="game6" name="game6" value="Wild Rift" />
+          <label for="game6">Wild Rift</label><br />
+          <input type="checkbox" id="game7" name="game7" value="Revived Witch" />
+          <label for="game7">Revived Witch</label><br />
+          <input type="checkbox" id="game8" name="game8" value="Honkai Impact 3" />
+          <label for="game8">Honkai Impact 3</label><br />
+        </div>
+        <!-- textarea -->
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        <!-- button -->
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
